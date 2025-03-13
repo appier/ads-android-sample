@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ad_mediation_admob_banner_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="300x250"
+        android:paddingTop="20dp"
+        android:paddingBottom="4dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/banner_container_300_250"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:background="@color/colorAdPlaceholder"
+        ads:adSize="MEDIUM_RECTANGLE"
+        ads:adUnitId="@string/admob_adunit_banner_300x250">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>

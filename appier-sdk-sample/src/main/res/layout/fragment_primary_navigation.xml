@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.navigation.SdkNavigationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/button_group_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/secondary_linear_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:text="video"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:paddingBottom="4dp"
+                android:src="@drawable/illustration_video" />
+
+        </LinearLayout>
+
+        <com.appier.android.sample.common.NavigationListView
+            android:id="@+id/secondary_nav_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </com.appier.android.sample.common.NavigationListView>
+
+        <TableRow
+            android:id="@+id/secondary_table_row_video"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#d8d8d8" />
+
+        <!-- Interstitial -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Interstitial"
+                android:textSize="14dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:paddingBottom="4dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/illustration_interstitial" />
+
+        </LinearLayout>
+
+        <com.appier.android.sample.common.NavigationListView
+            android:id="@+id/secondary_nav_interstitial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#d8d8d8" />
+
+        <!-- Banner -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Banner"
+                android:textSize="14dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:paddingBottom="4dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/illustration_banner" />
+
+        </LinearLayout>
+
+        <com.appier.android.sample.common.NavigationListView
+            android:id="@+id/secondary_nav_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#d8d8d8" />
+
+        <!-- Native -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Native"
+                android:textSize="14dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="8dp"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:paddingBottom="4dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/illustration_native" />
+
+        </LinearLayout>
+
+        <com.appier.android.sample.common.NavigationListView
+            android:id="@+id/secondary_nav_native"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#d8d8d8" />
+
+        <!-- Version Text -->
+
+        <TextView
+            android:id="@+id/text_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:gravity="center"
+            android:textColor="#b4b4b4"
+            android:textStyle="italic"
+            android:singleLine="false" />
+
+    </LinearLayout>
+
+</ScrollView>

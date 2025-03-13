@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1440E5</color>
+    <color name="colorPrimaryDark">#1036C2</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="colorAdPlaceholder">#D8D8D8</color>
+    <color name="colorTextDefault">#808080</color>
+    <color name="colorTextFaded">#E8E8E8</color>
+</resources>

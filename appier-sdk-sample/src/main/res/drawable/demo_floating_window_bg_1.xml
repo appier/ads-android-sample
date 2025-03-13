@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Avatar -->
+
+    <item
+        android:gravity="left"
+        android:top="16dp"
+        android:left="16dp"
+        android:width="47dp"
+        android:height="47dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F2F2F2" />
+        </shape>
+    </item>
+
+    <!-- Paragraph 1 -->
+
+    <item
+        android:gravity="left"
+        android:top="16dp"
+        android:left="73dp"
+        android:right="16dp"
+        android:height="12dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F2F2F2" />
+        </shape>
+    </item>
+
+    <!-- Paragraph 2 -->
+
+    <item
+        android:gravity="left"
+        android:top="32dp"
+        android:left="73dp"
+        android:right="16dp"
+        android:height="12dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F2F2F2" />
+        </shape>
+    </item>
+
+    <!-- Paragraph 3 -->
+
+    <item
+        android:gravity="left"
+        android:top="48dp"
+        android:left="73dp"
+        android:right="152dp"
+        android:height="12dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F2F2F2" />
+        </shape>
+    </item>
+
+    <!-- Main image -->
+
+    <item
+        android:gravity="fill_horizontal"
+        android:top="76dp"
+        android:left="16dp"
+        android:right="16dp"
+        android:height="171dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F2F2F2" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- For Appier SDK -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Required for displaying floating window -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Optional for using AIQUA SDK -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:enableOnBackInvokedCallback="true"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <activity android:name=".activity.BaseActivity" />
+
+        <activity android:name=".activity.sdk.VideoActivity" />
+
+        <activity android:name=".activity.sdk.InterstitialActivity" />
+
+        <activity android:name=".activity.sdk.BannerBasicActivity" />
+        <activity android:name=".activity.sdk.BannerListActivity" />
+        <!-- configChanges is required to prevent app from crashing on Android 5 devices -->
+        <activity android:name=".activity.sdk.BannerFloatingWindowActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+
+        <activity android:name=".activity.sdk.NativeBasicActivity" />
+        <activity android:name=".activity.sdk.NativeListActivity" />
+        <!-- configChanges is required to prevent app from crashing on Android 5 devices -->
+        <activity android:name=".activity.sdk.NativeFloatingWindowActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+
+        <activity android:name=".activity.mediation.admob.AdMobInterstitialActivity" />
+
+        <activity android:name=".activity.mediation.admob.AdMobBannerBasicActivity" />
+        <activity android:name=".activity.mediation.admob.AdMobBannerFloatingWindowActivity" />
+
+        <activity android:name=".activity.mediation.admob.AdMobNativeBasicActivity" />
+        <activity android:name=".activity.mediation.admob.AdMobNativeFloatingWindowActivity" />
+
+        <activity android:name=".activity.mediation.applovin.AppLovinInterstitialActivity"/>
+        <activity android:name=".activity.mediation.applovin.AppLovinBannerBasicActivity"/>
+        <activity android:name=".activity.mediation.applovin.AppLovinBannerListActivity"/>
+        <activity android:name=".activity.mediation.applovin.AppLovinBannerFloatingWindowActivity"/>
+        <activity android:name=".activity.mediation.applovin.AppLovinNativeBasicActivity"/>
+        <activity android:name=".activity.mediation.applovin.AppLovinNativeListActivity"/>
+        <activity android:name=".activity.mediation.applovin.AppLovinNativeFloatingWindowActivity"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".common.MyService" android:enabled="true" />
+
+        <!-- For the backward compatibility of Android P -->
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <!-- [AdMob] Application ID -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9553415307894531~1610766857"/>
+
+    </application>
+
+</manifest>
